@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<ht<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Para ti, Princesita</title>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lora:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);--bg1:#0b1220;--bg2:#050810;--text:#f3ecd9;--glow:#ffe27a;--pink:#ff7eb6}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+html,body{height:100%;margin:0;background:var(--bg2);color:var(--text);font-family:'Lora',Georgia,serif;overflow:hidden}
+body{background:radial-gradient(ellipse at 50% 100%,var(--bg1),var(--bg2) 70%)}
+canvas{position:fixed;inset:0;width:100%;height:100%;z-index:0}
+#intro{position:fixed;inset:0;z-index:2;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:24px;transition:opacity 1s}
+#intro h1{font-family:'Dancing Script','Brush Script MT',cursive;font-size:clamp(2.6rem,10vw,5rem);margin:0;color:var(--glow);text-shadow:0 0 18px rgba(255,226,122,.7),0 0 40px rgba(255,226,122,.35);opacity:0;animation:rise 2.4s 2.2s forwards}
+#intro p{margin:12px 0 28px;font-style:italic;opacity:0;animation:rise 2s 3.8s forwards}
+#intro button{font:inherit;color:var(--text);background:rgba(255,126,182,.15);border:1px solid var(--pink);border-radius:999px;padding:12px 28px;cursor:pointer;opacity:0;animation:rise 1.6s 5s forwards;box-shadow:0 0 18px rgba(255,126,182,.4)}
+#intro button:hover{background:rgba(255,126,182,.3)}
+@keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+#letter{position:fixed;inset:0;z-index:1;overflow-y:auto;opacity:0;pointer-events:none;transition:opacity 1.4s;padding:max(24px,env(safe-area-inset-top,0px)) 20px 60px}
+#letter.show{opacity:1;pointer-events:auto}
+.card{max-width:640px;margin:40px auto;padding:28px 24px;background:rgba(8,12,24,.72);border:1px solid rgba(255,226,122,.25);border-radius:18px;backdrop-filter:blur(4px);line-height:1.75;font-size:1.05rem}
+.card h2{font-family:'Dancing Script','Brush Script MT',cursive;color:var(--glow);font-size:2rem;margin:1.2em 0 .3em}
+.card p{margin:0 0 1em}
+</style>
+</head>
+<body>
+<canvas id="c"></canvas>
+
+<div id="intro">
+  <h1>Para ti, Princesita 💗</h1>
+  <p>Una historia contada desde mi perspectiva</p>
+  <button id="open">Abrir carta</button>
+</div>
+
+<div id="letter">
+  <div class="card">
+    <p>Hola, otra vez. Hoy sí es tu cumpleaños, así que te deseo un gran día para ti, Princesita 💗. Ya con 18 años y siendo una muy buena chica, de esas personas que muchos quieren y que, aparte, se ganan los ojos y corazones de todos en un ratito jajaja. Bueno, no sé qué más decirte, porque siempre te he dicho lo que he sentido en cada momento y siento que ya te he contado casi todo. Pero esto ya lo había estado pensando y decidí contarte nuestra historia desde cómo nos conocimos y cómo la viví yo desde mi perspectiva, ya, Princesita 💗.</p>
+    <h2>Introducción</h2>
+    <p>Todo comenzó un 2 de marzo, en la clase de Comprensión y Redacción. Me levanté nervioso por ser el primer día de algo nuevo. Llegué muy temprano, la verdad. Luego llegó alguien que después se convertiría en un gran amigo, Fabián Luna, y comenzamos a hablar, más por iniciativa de él, claro está, porque yo soy muy tímido para hablar con personas nuevas.
+    Pero, después de unos minutos, llegó alguien que terminaría cambiando el rumbo de mi año. Yo estaba muy nervioso, por así decirlo, pero ingresaste con Maina y me quedé sorprendido por la manera en que se hablaban y por lo amigas que parecían. Yo pensé: “Waoo, ¿se puede entrar con amigos a la U?”.
+    Entonces, el profesor indicó que debíamos hacer grupos de cuatro personas. Tú tomaste la iniciativa y quedaste con Maina, luego hablaron con Sandra y solo quedaba uno. Mi amigo había dicho: “Habla, un jeanquenpo”, ya que él y yo habíamos quedado como equipo. Pero como tú habías dicho que uno se quería unir, yo le dije a Fabián: “Yo llegué primero, bro”. Él simplemente dijo: “Bueno”.
+    Comenzó la clase y, en mi esquizofrenia, empecé a comentar cosas solo, pero tú escuchabas y respondías a todo lo que decía. Yo quedé maravillado. Después hicimos un grupo de WhatsApp para hablar sobre los trabajos. Terminó la clase y me fui sin hablar mucho más contigo.
+    Al día siguiente, 3 de marzo, teníamos clase de Matemática. Llegué de la misma manera temprano y, después de unos minutos, llegaste tú. Yo pensé: “¿Qué? ¿Otra vez tú?”. Te sentaste adelante y no pasó mucho tiempo antes de que habláramos un poco, lo necesario para que, a la salida, me dijeras “hacemos hora” y me dieras tu cartera para que te amarres los zapatos.
+    Después de eso fuimos a un parque, comenzamos a hablar y a contarnos algunas cosas. Se hizo tarde y tenías que irte, pero te invité a comer un dulce. Fuimos y, al despedirnos, pasó algo que me sorprendió bastante: me diste un beso en el cachete.
+    Obviamente, lo hablé demasiado con mis amigos porque nunca me había despedido así de otras chicas que recién conocía jajaja.
+    Pasaron algunos días y, después de estar molestando a mis amigos con el tema, me dijeron: “¿Por qué no le hablas?”. Y yo pensé: “Es verdad, tengo su número, ¿no?”. Así que te hablé. Pensé que no hablaríamos mucho, pero fue todo lo contrario. Me contabas cómo había sido tu día y las cosas que te habían molestado. Me quedé asombrado por la conexión y la confianza que llegamos a tener a pesar de habernos conocido hacía tan solo unas semanas.
+    </p>
+    <h2>Desarollo</h2>
+    <p>Poco a poco comencé a acompañarte, casi siempre a solas, hasta que empezaste a hablar más con Sofía y con otras amigas de tu curso. Yo llegué a pensar que quizá lo hacías porque no querías que confundiera las cosas, pero, para ese momento, yo ya las estaba confundiendo.
+    Después salió lo de Jenni con Cristo, donde ayudé y todo. Pero la duda seguía creciendo hasta que finalmente tomé valor. Claro, ahora puedo decir que fue un error jajaja, porque ni siquiera había intentado enamorarte con halagos o detalles. Simplemente fue un salto al vacío que pensé que quedaría ahí.
+    Todavía recuerdo cómo fue. Ese día me senté lejos y no acepté ayudarte con Matemática como lo había hecho en el examen anterior jajaja. Pero, a la salida, para despedirme como siempre lo hacía, te agarré y te dije que necesitaba comentarte algo. La verdad, llevaba mucho tiempo sobrepensando una cosa: quería saber cómo me veías, si como un amigo o como algo más.
+    Por tus gestos y expresiones entendí que te sentiste mal al decirme que me veías como amigo. Luego llegó Sofi y se fueron, pero tú te acercaste más y yo no me alejé. Traté de sobrellevar lo que sentía.
+    Después comencé a hablar más con un amigo de España. Un día hicimos un live y entró su mejor amiga, Andrea. Comenzamos a hablar como si nada y, yo, todo confiado, le dije una vulgaridad que para ella fue un “waooo” jajaja. Ese mismo día, mi amigo de España me dijo que Andrea quería mi número. Como ya hablábamos por TikTok, terminé teniendo la oportunidad de dejar de pensar tanto en ti durante un tiempo.
+    Quizá también notaste que estaba haciendo otras cosas o hablando con alguien por mis notas e historias, donde a veces ponía su inicial o algo parecido.
+    Después de alejarme un tiempo de ti y de haberme peleado con ella, salió nuevamente la oportunidad de acompañarte. Yo iba confiado en que ya no sentiría lo mismo, pero no pasó eso. Sentí incluso más conexión.
+    Justo en ese momento Andrea me habló para intentar arreglar las cosas y yo simplemente atiné a decirle: “¿Para qué hablar si tú ya me terminaste?”. Después, estando con mis amigos, prendimos un live en TikTok y comencé a hablar sobre cómo me sentía. Ella lo escuchó y se asustó demasiado, hasta llegar a hacerse daño. Yo me enteré después por ella misma.
+    Al día siguiente sentí que ya no te acercaste tanto a mí, o al menos así lo percibí yo.
+    Luego llegó el día en que salimos a tomar con Sofi durante las vacaciones. De la nada saliste a dejar algo y, cuando regresaste, viniste con tu novio actual. Yo no sabía que él estaría ahí y me puse un poco mal, así que me alejé. Creo que te diste cuenta y te acercaste.
+    Como tú dijiste, yo sentí que me habías negado algo, quizá que solo era un amigo, pero ¿qué se puede hacer? Cuando te gusta alguien, a veces intentas no mirar las cosas que te pueden doler.
+    También te comenté que estaba hablando y saliendo con alguien antes de todo esto porque quería demostrarte que estaba intentando soltarte y dejarte ir para poder ser amigos.
+    Antes de todo eso, había subido una historia en la que una amiga me decía que era bonito hablar contigo. Tú respondiste esa misma noche preguntando: “¿Cómo es eso de que es bonito hablar conmigo?”. Yo, estando picado, te respondí: “¿Por qué decirlo así si literalmente somos amigos?”. Entonces comenzaste a explicarme lo que querías decir. Fue bonito hablar de eso contigo.
+    Pero después don Pierito volvió a tomar con su amigo y otra vez terminó hablándote sobre cómo se sentía jajaja.
+    Hasta que comenzaron las clases. Ya estábamos en el mismo horario de un curso y, sin esperarlo, llegó ese día.
+    </p>
+    <h2>Desenlace</h2>
+    <p>
+        El primer día de clases fue normal. Hablamos, conversamos sobre tu cumpleaños y todo estaba tranquilo, aunque estábamos más pegados de lo normal.
+        Hasta que la miss dijo que teníamos que hacer grupos y tú atinaste a decirme: “En la tarde, Pierito, si te falta uno, mi amiguito no tiene”. Ahí me llené de dudas, porque nunca te había escuchado hablar así de otro chico.
+        La semana siguiente lo vi el lunes y pensé: “Es él. Es el de aquella vez en la casa de Sofi”. Entonces entendí que él era el “amiguito”.
+        Llegó el miércoles. Me senté en el mismo sitio, pero antes de todo te di tu tiara, tus Takis y tu gaseosa. Después llegó él y te dio un beso en el cachete. Me sentí incómodo en ese momento, pero ya estaba ahí.
+        A la salida pregunté a las chicas y terminé comprobando que sí había entendido bien la situación. Solo atiné a no incomodar y seguir actuando con normalidad.
+        Después se fueron las chicas y yo me fui con ellas para no ser mal tercio. De ahí me hablaste y me comentaste que probablemente estarías con él. Me dolió, no te voy a mentir, pero también fue bonito poder hablar contigo y sentir que podía soltarme un poco más.
+        Al día siguiente, después de que la miss también nos gritara, decidí cambiarme de sitio. Conversé con el nuevo compañero y decidí no ir contigo porque pensé que quería que estuvieras bien con él y que tenía que darle su lugar a la persona que estaba contigo. Eso, sin embargo, estuvo mal para ti, porque me dijiste que prácticamente me querías matar jajaja. Entonces te dije que lo hablaríamos a la salida.
+        Salí con mi amigo hacia el ascensor y tú llegaste con él. Luego él se fue al baño y tú atinaste a jalarme el cabello y reclamarme. La verdad, fue algo que me gustó jajaja.
+        Justo llegó el ascensor, entré con mis amigos y comenzaron a gritar al verte hacer algo con él. Yo no vi exactamente qué fue, pero mis amigos empezaron con su “¡Waaa, ¿cómo va a hacer eso?!”, jajaja. Fue un mate de risa con ellos.
+        Y así llegamos al día de hoy.
+        Ya no estamos tan pegados como antes, ya no nos vemos cuatro días a la semana y, cuando nos vemos, muchas veces ni hablamos. La mayoría de las veces hablamos por WhatsApp y, en ocasiones especiales, socializamos en persona jajaja.
+        Con todo esto quiero llegar a algo simple: quería quitarme algunas dudas, agradecerte por cómo me hiciste sentir tantas veces cuando hablábamos y explicarte por qué tomé algunas decisiones que, desde mi perspectiva, estuvieron mal, pero que también siento que poco a poco nos están llevando por un camino donde tú puedes estar bien con tu pareja y yo puedo aprender a soltar y dejar que las cosas sigan su curso.
+        Creo que también es bueno que cada uno pueda socializar con sus amigos, conocer personas y no depender del otro para todo. Aunque, aun así, sepamos que podemos contar el uno con el otro cuando tengamos alguna duda o necesitemos hablar.
+        Tal vez ya terminaste de leer esto o quizá ya te di tus regalos de hoy. Espero de verdad que te hayan gustado, Princesita ❤️.
+        Gracias por formar parte de este año y por todos los momentos que hemos vivido. Independientemente de cómo hayan cambiado las cosas, me quedo con todo lo bonito que vivimos y con la amistad que tenemos.
+        Feliz cumpleaños, Princesita ❤️. Espero que disfrutes muchísimo tus 18 y que tengas un día increíble. <br>
+        De: Pierito 
+    </p>
+    </div>
+</div>
+
+<script>
+const cv=document.getElementById('c'),ctx=cv.getContext('2d');
+let W,H,dpr=Math.min(devicePixelRatio||1,2),flies=[],mouse=null;
+function resize(){W=innerWidth;H=innerHeight;cv.width=W*dpr;cv.height=H*dpr;ctx.setTransform(dpr,0,0,dpr,0,0)}
+addEventListener('resize',resize);resize();
+const N=Math.round(Math.min(70,Math.max(30,W/14)));
+for(let i=0;i<N;i++){
+  const side=Math.random()<.5;
+  flies.push({x:side?-30:W+30,y:Math.random()*H,vx:0,vy:0,a:Math.random()*6.28,
+    sp:.25+Math.random()*.5,r:1.5+Math.random()*2.2,ph:Math.random()*6.28,
+    fr:.6+Math.random()*1.2,delay:Math.random()*120,
+    col:Math.random()<.2?'255,126,182':'255,226,122',
+    hx:Math.random()*W,hy:H*.15+Math.random()*H*.8});
+}
+let t=0;
+function loop(){
+  t++;ctx.clearRect(0,0,W,H);ctx.globalCompositeOperation='lighter';
+  for(const f of flies){
+    if(t<f.delay)continue;
+    f.a+=(Math.random()-.5)*.25;
+    let tx=Math.cos(f.a)*f.sp,ty=Math.sin(f.a)*f.sp;
+    if(t<400){tx+=(f.hx-f.x)*.004;ty+=(f.hy-f.y)*.004}
+    if(mouse){const dx=mouse.x-f.x,dy=mouse.y-f.y,d=Math.hypot(dx,dy);if(d<220){tx+=dx/d*.5;ty+=dy/d*.5}}
+    f.vx+=(tx-f.vx)*.05;f.vy+=(ty-f.vy)*.05;
+    f.x+=f.vx;f.y+=f.vy;
+    if(f.x<-60)f.x=W+40;if(f.x>W+60)f.x=-40;if(f.y<-40)f.y=H+30;if(f.y>H+40)f.y=-30;
+    const p=Math.max(0,Math.sin(t*.02*f.fr+f.ph)),al=.15+p*.85,R=f.r*(5+p*7);
+    const g=ctx.createRadialGradient(f.x,f.y,0,f.x,f.y,R);
+    g.addColorStop(0,`rgba(${f.col},${al})`);g.addColorStop(.25,`rgba(${f.col},${al*.4})`);g.addColorStop(1,`rgba(${f.col},0)`);
+    ctx.fillStyle=g;ctx.beginPath();ctx.arc(f.x,f.y,R,0,6.28);ctx.fill();
+  }
+  ctx.globalCompositeOperation='source-over';
+  requestAnimationFrame(loop);
+}
+loop();
+function setM(e){const p=e.touches?e.touches[0]:e;mouse={x:p.clientX,y:p.clientY}}
+addEventListener('pointermove',setM);addEventListener('touchmove',setM,{passive:true});
+addEventListener('pointerleave',()=>mouse=null);
+document.getElementById('open').onclick=()=>{
+  const i=document.getElementById('intro');i.style.opacity=0;i.style.pointerEvents='none';
+  document.getElementById('letter').classList.add('show');
+};
+</script>
+</body>
